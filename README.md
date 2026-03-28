@@ -37,8 +37,14 @@ This repository contains Java programs created while learning core programming c
 
 ### Mini Projects
 
-* Cricket Score Tracker
+* Cricket Score Tracker 
 * Player Performance Analyzer
+
+### Oops(Object oriented programming)
+
+* Student Information using Class & Object
+* Car Information using class & Object
+* Bank Account using Class & Object
 
 ## Technologies Used
 
