@@ -12,6 +12,7 @@ This repository contains Java programs created while learning core programming c
 * Frequency of Elements
 * Array Rotation (Left / Right / K Rotations)
 * Prefix Sum
+* 2D Array Problems
 
 ### Searching
 
