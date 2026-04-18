@@ -44,6 +44,14 @@ public class Array2 {
         }
     }
 
+    public static int linear(int arr[],int target){
+        for(int i=0; i<arr.length; i++){
+            if (arr[i]==target) {
+                return i;
+            }
+        }
+        return -1;
+    }
     public static int[] zeros(int arr[]){
         System.out.println("After moving zeros to end : ");
         int index=0;
@@ -80,6 +88,14 @@ public class Array2 {
          System.out.println();
         System.out.println(Arrays.toString(right(arr)));
         frequency(arr);
+        System.out.println("Enter target element : ");
+        int target=sc.nextInt();
+        int index = linear(arr, target);
+              if (index != -1) {
+                  System.out.println("Found at index: " + index);
+                  } else {
+                  System.out.println("Not found");
+                  }
         System.out.println(Arrays.toString(zeros(arr)));
         sc.close();
     }
