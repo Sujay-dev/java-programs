@@ -1,0 +1,66 @@
+package Final_Revision;
+
+import java.util.Scanner;
+
+public class Strings {
+    public static String reverse(String str){
+        String rev="";
+        for(int i=str.length()-1; i>=0; i--){
+            rev+=str.charAt(i);
+        }
+        return rev;
+    }
+
+    public static boolean palindrome(String str){
+        for(int i=0; i<str.length()/2; i++){
+            if (str.charAt(i)!=str.charAt(str.length()-1-i)) {
+               return false;
+            }
+        }   
+        return true;
+    }
+
+
+    public static int vowels(String str){
+        int count=0;
+        for(int i=0; i<str.length(); i++){
+            char ch=str.charAt(i);
+            if (ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U' || ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u') {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public static int consonants(String str){
+        int count=0;
+        for(int i=0; i<str.length(); i++){
+            char ch=str.charAt(i);
+           if (ch!='A'  && ch!='E' && ch!='I' && ch!='O' && ch!='U' && ch!='a' && ch!='e' && ch!='i' && ch!='o' && ch!='u') {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public static String spaces(String str){
+        return str.replace(" ", "");
+       
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str=sc.nextLine();
+       System.out.println(reverse(str));
+       if (palindrome(str)) {
+        System.out.println("Palindrome");
+       }else{
+        System.out.println("Not palindrome");
+       }
+
+       System.out.println("Vowels : "+ vowels(str));
+       System.out.println("Consonants : "+ consonants(str));
+       System.out.println(spaces(str));
+        
+        sc.close();
+    }
+}
