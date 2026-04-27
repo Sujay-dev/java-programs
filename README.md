@@ -46,6 +46,9 @@ This repository contains Java programs created while learning core programming c
 * Student Information using Class & Object
 * Car Information using class & Object
 * Bank Account using Class & Object
+* Calculating area of rectangle and circle using Class & Object
+* Employee Information using Class & Object
+* Calculator using Class & Object
 
 ## Technologies Used
 
