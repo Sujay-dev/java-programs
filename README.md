@@ -50,6 +50,7 @@ This repository contains Java programs created while learning core programming c
 * Employee Information using Class & Object
 * Calculator using Class & Object
 * Book Discount given percentage using Class & Object
+* Mobile Battery percentage calculator using Class & Object
 
 ## Technologies Used
 
