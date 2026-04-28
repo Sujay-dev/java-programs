@@ -49,6 +49,7 @@ This repository contains Java programs created while learning core programming c
 * Calculating area of rectangle and circle using Class & Object
 * Employee Information using Class & Object
 * Calculator using Class & Object
+* Book Discount given percentage using Class & Object
 
 ## Technologies Used
 
