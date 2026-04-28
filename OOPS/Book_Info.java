@@ -6,7 +6,7 @@ class Book {
     String title;
     int price;
 
-    void diaplay(){
+    void display(){
         System.out.println("Book Title : "+ title+" ,"+ "Price : "+ price);
     }
 
@@ -33,7 +33,7 @@ public class Book_Info {
         System.out.println("Enter dicount percentage");
         int percentage=sc.nextInt();
 
-        b1.diaplay();
+        b1.display();
         b1.applydiscount(percentage);
         b1.afterdiscount();
 
