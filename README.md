@@ -51,7 +51,8 @@ This repository contains Java programs created while learning core programming c
 * Calculator using Class & Object
 * Book Discount given percentage using Class & Object
 * Mobile Battery percentage calculator using Class & Object
-* Student Grade calculator 
+* Student Grade calculator
+* Number calculation (Prime,Even/Odd,Sum of digits)
 
 ## Technologies Used
 
