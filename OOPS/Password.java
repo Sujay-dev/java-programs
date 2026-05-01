@@ -3,9 +3,20 @@ package OOPS;
 import java.util.Scanner;
 
 class Password_Checker {
-    String password;
+   private String password;
 
-    boolean isvalid(){
+   Password_Checker(String password){
+    setpassword(password);
+   }
+   
+   public void setpassword(String password){
+    if (password==null) 
+        password="";
+    else
+    this.password=password;
+   }
+
+    public boolean isvalid(){
 
         if (password.length()<8) return false;
 
@@ -28,9 +39,9 @@ class Password_Checker {
 public class Password {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        Password_Checker p1=new Password_Checker();
-        System.out.println("Enter Password : ");
-        p1.password=sc.nextLine();
+
+        String password=sc.next();
+        Password_Checker p1=new Password_Checker(password);
         if (p1.isvalid()) {
             System.out.println("Valid Password");
         }else{
