@@ -3,26 +3,39 @@ package OOPS;
 import java.util.Scanner;
 
 class Product {
-    String name;
-    int price;
-    int quantity;
+    private String name;
+    private int price;
+    private int quantity;
 
-    int totalcost(){
-        if (price<0 || quantity< 0) {
-      return 0;
-    }else{
-         return price*=quantity;
+    Product(String name, int price, int quantity){
+        this.name=name;
+        setPrice(price);
+        setQuantity(quantity);
     }
+
+    public void setPrice(int price){
+        if (price>0) 
+        this.price=price;
+    else price=0;
+    }
+
+    public void setQuantity(int quantity){
+        if (quantity>0) 
+        this.quantity=quantity;
+    else quantity=0;
+    }
+
+    public int totalcost(){
+         return price*quantity;
 }
 
     int applytax(int percent){
-        int total=totalcost();
-        int tax=total*percent/100;
+        int tax=totalcost()*percent/100;
 
-        return total+tax;
+        return totalcost()+tax;
         } 
 
-    void display(){
+    public void display(){
         System.out.println("Name : "+ name+ " ,"+ "Price : "+ price+ " ,"+ "Quantity : "+ quantity);
     }
 }
@@ -30,15 +43,16 @@ class Product {
 public class Products {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        Product p1=new Product();
-        System.out.println("Enter Product name : ");
-        p1.name=sc.nextLine();
-        System.out.println("Enter price of it : ");
-        p1.price=sc.nextInt();
-        System.out.println("Enter quantity of it : ");
-        p1.quantity=sc.nextInt();
-        p1.display();
-        p1.applytax(18);
+        System.out.println("Enter product name : ");
+        String name=sc.nextLine();
+        System.out.println("Enter price : ");
+        int price=sc.nextInt();
+        System.out.println("Enter quantity : ");
+        int quantity=sc.nextInt();
+
+        Product p1=new Product(name,price,quantity);
+        System.out.println("Total cost : "+ p1.totalcost());
+        System.out.println("Total cost after applying tax : "+ p1.applytax(18));
         p1.display();
         sc.close();
     }
