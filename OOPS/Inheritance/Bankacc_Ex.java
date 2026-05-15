@@ -104,11 +104,15 @@ class SavingsAccount extends BankAccount{
         return (getBalance()*interestrate*time)/100;
     }
 
+    public int finalamt(){
+        return getBalance()+calculate();
+    }
     public void displaySavings(){
         displayAccount();
         System.out.println("Interest Rate : "+getInterestrate());
         System.out.println("Time  : "+ getTime());
-        System.out.println("Savings : "+calculate());
+        System.out.println("Interest : "+calculate());
+        System.out.println("Final Amount : "+finalamt());
     }
 }
 public class Bankacc_Ex {
@@ -127,3 +131,4 @@ public class Bankacc_Ex {
         sc.close();
     }
 }
+
