@@ -75,10 +75,16 @@ class Result extends Learner{
     }
 
     public double average(){
+        if(marks.length == 0){
+          return 0;
+        }
         return (double)total()/marks.length;
     }
 
     public int highest(){
+        if(marks.length == 0){
+           return 0;
+         }
         int max=Integer.MIN_VALUE;
         for(int i=0; i<marks.length; i++){
             if (marks[i]>max) {
@@ -88,6 +94,14 @@ class Result extends Learner{
         return max;
     }
 
+    public boolean ispass(){
+        for(int i=0; i<marks.length; i++){
+            if (marks[i]<35) {
+                return false;
+            }
+        }
+        return true;
+    }
     public void displayMarks(){
         System.out.println("Marks : ");
         for(int i=0; i<marks.length; i++){
@@ -102,6 +116,7 @@ class Result extends Learner{
         System.out.println("Total Marks : "+total());
         System.out.println("Average Marks : "+average());
         System.out.println("Highest Marks : "+highest());
+        System.out.println(ispass() ? "Pass" : "Fail");
     }
 }
 public class Stud_Result {
