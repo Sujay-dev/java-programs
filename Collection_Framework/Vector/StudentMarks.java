@@ -94,7 +94,6 @@ public class StudentMarks {
         topper = s;
         }
     }
-
              System.out.println("Student with Highst marks: ");
              System.out.println("ID: "+ topper.getID());
              System.out.println("Name: "+ topper.getName());
