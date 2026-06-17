@@ -1,0 +1,20 @@
+package CollectionFramework.CopyOnWriteArrayList;
+
+import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
+
+public class AddandPrint {
+    public static void main(String[] args) {
+        List<Integer> list=new CopyOnWriteArrayList<>();
+
+        list.add(10);
+        list.add(20);
+        list.add(30);
+        list.add(40);
+        list.add(50);
+
+        for (Integer i : list) {
+            System.out.println(i);
+        }
+    }
+}
