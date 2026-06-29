@@ -1,6 +1,6 @@
 # Java Practice Programs
 
-This repository contains Java programs created while learning core programming concepts and problem-solving.
+A collection of Java programs and mini-projects built while learning Core Java, Object-Oriented Programming, Data Structures, and problem-solving.
 
 ## Topics Covered
 
@@ -10,64 +10,116 @@ This repository contains Java programs created while learning core programming c
 * Move Zeros to End
 * Missing Number
 * Frequency of Elements
-* Array Rotation (Left / Right / K Rotations)
+* Left Rotation
+* Right Rotation
+* K Rotations
 * Prefix Sum
-* 2D Array Problems
+* Maximum & Minimum Element
+* Second Largest Element
+* Duplicate Elements
+
+### 2D Arrays & Matrix
+
+* Matrix Addition
+* Matrix Multiplication
+* Matrix Transpose
+* Non-Square Matrix Transpose
+* Spiral Matrix Traversal
+* Row Wise Sum
+* Column Wise Sum
+* Maximum Element in Matrix
+* Search in Matrix
 
 ### Searching
 
 * Linear Search
 * Binary Search
-
-### Matrix Problems
-
-* Matrix Addition
-* Transpose Matrix
-* Spiral Matrix
-* Column Wise Sum
-* Maximum Element in Matrix
-* Non-Square Matrix Transpose
+* Binary Search on Sorted Arrays
 
 ### Methods
 
 * Sum using Method
 * Factorial using Method
-* Sum of digits using Method
-* Palindrome using Method
-* Maximum Number using Method
+* Sum of Digits
+* Palindrome Check
+* Prime Number Check
+* Maximum of Three Numbers
+* Armstrong Number
+* Fibonacci Series
+
+### Object-Oriented Programming (OOP)
+
+* Student Management System
+* Employee Information System
+* Bank Account System
+* Car Information
+* Book Discount Calculator
+* Mobile Battery Calculator
+* Rectangle & Circle Area Calculator
+* Student Grade Calculator
+* Number Utility (Prime, Even/Odd, Sum of Digits)
+* Simple Calculator
+
+### Collections Framework
+
+* ArrayList Programs
+* LinkedList Programs
+* Stack Programs
+* Queue Programs
+* PriorityQueue Programs
+* HashSet Programs
+* LinkedHashSet Programs
+* TreeSet Programs
+* HashMap Programs
+* LinkedHashMap Programs
+* TreeMap Programs
+* Hashtable Programs
 
 ### Mini Projects
 
-* Cricket Score Tracker 
+* Cricket Score Tracker
 * Player Performance Analyzer
+* Student Record Manager
+* Expense Tracker (Console)
+* Library Management System (Console)
 
-### Oops(Object oriented programming)
+## Concepts Practiced
 
-* Student Information using Class & Object
-* Car Information using class & Object
-* Bank Account using Class & Object
-* Calculating area of rectangle and circle using Class & Object
-* Employee Information using Class & Object
-* Calculator using Class & Object
-* Book Discount given percentage using Class & Object
-* Mobile Battery percentage calculator using Class & Object
-* Student Grade calculator
-* Number calculation (Prime,Even/Odd,Sum of digits)
+* Object-Oriented Programming (OOP)
+* Exception Handling
+* Java Collections Framework
+* Methods & Recursion
+* Arrays & Matrices
+* Searching Algorithms
+* Problem Solving
+* Clean Code Practices
 
 ## Technologies Used
 
 * Java
-* Basic Data Structures
-* Problem Solving Techniques
+* IntelliJ IDEA / Eclipse
+* Git
+* GitHub
 
 ## Purpose of This Repository
 
-* Practice Java programming
-* Improve logical thinking
-* Maintain coding practice on GitHub
-* Build a beginner developer portfolio
+* Strengthen Core Java fundamentals
+* Practice Data Structures & Problem Solving
+* Improve Object-Oriented Programming skills
+* Build a consistent GitHub portfolio
+* Prepare for Java Backend Development interviews
+
+## Upcoming
+
+* File Handling
+* Multithreading
+* Java 8 Features (Lambda, Streams, Optional)
+* JDBC
+* SQL Integration
+* Spring Boot Projects
 
 ## Author
 
-Sujay
+**Sujay Kamble**
+
 
